@@ -3,9 +3,10 @@
 • Algorithmic project which finds all the shortest possible paths in a graph
 
 • The program will receive the data describing the ant farm from the standard output in the following format:
-number_of_ants
-the_rooms
-the_links
+    
+    number_of_ants
+    the_rooms
+    the_links
 
 
 • The ant farm is defined by the following links:
