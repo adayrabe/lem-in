@@ -11,30 +11,7 @@ the_links
 • The ant farm is defined by the following links:
 
 ##start
-1 23 3
-2 16 7 
-#comment
-3 16 3
-4 16 5
-5 9 3
-6 1 5
-7 4 8
-##end
-0 9 5
-0-4
-0-6
-1-3
-4-3
-5-2
-3-5
-#another comment
-4-2
-2-1
-7-6
-7-2
-7-4
-6-5
-#another comment
+
 
 Which corresponds to the following representation:
 
@@ -46,6 +23,7 @@ Which corresponds to the following representation:
      \    ________/|  /     |
       \  /         [2]_____/
        [7]_________/
+
 • There are two parts:
 ◦ The rooms, which are defined by: name coord_x coord_y ◦ The links, which are defined by: name1-name2
 ◦ All of it is broken by comments, which start with #
@@ -69,15 +47,14 @@ Quickest way means the solution with the least number of lines, respecting theo 
   x, z, r represents the ants’ numbers (going from 1 to number_of_ants) and y, w, o represents the rooms’ names.
 
 NOTE: my program works well with finding several possible paths, but works poorly in case of intersection as in following example:
-
-  [start]
-   / |
- [3] [1]--[5]
- /    |    | 
-[4]--[2] [6]
-      |  / 
-     [end]
      
+      [start]
+       / |
+     [3] [1]--[5]
+     /    |    |
+    [4]--[2]   [6]
+          |    /
+          [end]
 In this case, my program will find the shortest path (start-1-2-end) and send the ants across the farm via this path, although it would be better to send them via 2 paths:
 (start-3-4-2-end) (start-1-5-6-end).
 Planning to add this possibility in the future
