@@ -46,9 +46,14 @@ Which corresponds to the following representation:
     \  /         [2] /______/
      [7]_________/
      
-            _________
-           /         \
-     
+             _______________
+            /               \
+      _____[5]----[3]---[1] |
+     /             |    /   |
+    [6]----[0]----[4   /    |
+     \    ________/|  /     |
+      \  /         [2]_____/
+       [7]_________/
 • There are two parts:
 ◦ The rooms, which are defined by: name coord_x coord_y ◦ The links, which are defined by: name1-name2
 ◦ All of it is broken by comments, which start with #
