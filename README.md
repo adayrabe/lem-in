@@ -25,27 +25,18 @@ the_links
 0-6
 1-3
 4-3
-5-2
-3-5
-#another comment
-4-2
-2-1
-7-6
+    5-2
+    3-5
+    #another comment
+    4-2
+    2-1
+    7-6
 7-2
 7-4
 6-5
 #another comment
 
-Which corresponds to the following representation:
-             _______________
-            /               \
-    ______[5]----[3]----[1] | 
-   /              |     /   | 
-  [6]-----[0]----[4]   /    | 
-   \    _________/|   /     |
-    \  /         [2] /______/
-     [7]_________/
-     
+Which corresponds to the following representation:     
              _______________
             /               \
       _____[5]----[3]---[1] |
